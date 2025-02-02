@@ -1,0 +1,403 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", serif;
+  color: var(--text-clr);
+}
+:root {
+  --bg-clr: white /*#1f1f1f */;
+  --text-clr: black;
+  --some-clr: #191a23;
+  --light-white-clr: #f3f3f3;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: var(--bg-clr);
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: var(--bg-clr);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+#nav ul .item a:hover {
+  color: #343542;
+}
+
+#nav-btn {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid var(--text-clr);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#nav-btn:hover {
+  background-color: var(--text-clr);
+  color: var(--bg-clr);
+}
+
+#hero {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero #first-section {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hero #second-section {
+  height: 80%;
+  width: 40%;
+}
+
+#hero #first-section h1 {
+  font-size: 4vw;
+  line-height: 5vw;
+  font-weight: 500;
+}
+
+#hero #first-section p {
+  margin-top: 20px;
+  width: 70%;
+  text-align: left;
+}
+
+#hero-btn {
+  padding: 20px 20px;
+  background: var(--text-clr);
+  border: 1px solid var(--text-clr);
+  font-size: 20px;
+  border-radius: 8px;
+  color: var(--bg-clr);
+  width: 60%;
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hero-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--text-clr);
+  color: var(--text-clr);
+}
+
+#hero #second-section img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+}
+
+#page2 .services-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  padding: 20px 80px;
+}
+
+#page2 .services-header h2 {
+  font-size: 2.5vw;
+  background-color: #a3e84e;
+  padding: 0 5px;
+}
+
+#page2 .services-header p {
+  width: 50%;
+}
+
+#container {
+  height: 80%;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.cards {
+  flex-shrink: 0;
+  height: 250px;
+  width: 45%;
+  border: 1px solid var(--light-white-clr);
+  border-radius: 30px;
+  background-color: var(--light-white-clr);
+  padding: 2vw 4vw;
+}
+
+.cards h2 {
+  width: 50%;
+  font-weight: 500;
+  font-size: 2vw;
+  border-radius: 5px;
+  background: #a3e84e;
+  color: var(--text-clr);
+  padding: 1px 5px;
+}
+
+.cards h2.two {
+  width: 40%;
+  font-weight: 500;
+  font-size: 2vw;
+  border-radius: 5px;
+  background: #a3e84e;
+}
+
+.cards li {
+  margin-top: 6vw;
+  color: var(--text-clr);
+  background-color: transparent;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards li i {
+  font-size: 2vw;
+  height: 40px;
+  width: 40px;
+  color: var(--bg-clr);
+  background-color: var(--text-clr);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards li p {
+  color: var(--text-clr);
+}
+
+.second-card {
+  flex-shrink: 0;
+  height: 250px;
+  width: 45%;
+  border: 1px solid var(--some-clr);
+  border-radius: 30px;
+  background-color: var(--some-clr);
+  padding: 2vw 4vw;
+}
+
+.second-card h2 {
+  width: 45%;
+  font-weight: 500;
+  font-size: 2vw;
+  border-radius: 5px;
+  color: var(--text-clr);
+  padding: 1px 5px;
+  background: var(--bg-clr);
+}
+
+.second-card h2.two {
+  width: 40%;
+  font-weight: 500;
+  font-size: 2vw;
+  border-radius: 5px;
+}
+
+.second-card li {
+  margin-top: 6vw;
+  color: black;
+  background-color: transparent;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.second-card li p {
+  color: var(--bg-clr);
+}
+
+.second-card li i {
+  font-size: 2vw;
+  height: 40px;
+  width: 40px;
+  color: var(--text-clr);
+  background-color: var(--bg-clr);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page3 {
+  height: 50vh;
+  width: 100%;
+  padding: 20px 80px;
+}
+
+#page3 .con {
+  height: 100%;
+  width: 100%;
+  background-color: var(--light-white-clr);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#con-left {
+  height: 100%;
+  width: 40%;
+  color: var(--text-clr);
+  padding: 20px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#con-left h2 {
+  font-size: 2vw;
+  color: var(--text-clr);
+}
+
+#con-left p {
+  color: var(--text-clr);
+}
+
+#con-right {
+  position: relative;
+  height: 100%;
+  width: 40%;
+}
+#con-right img {
+  position: absolute;
+  top: -5%;
+  height: 110%;
+  width: 100%;
+}
+
+#card-btn {
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  background: var(--text-clr);
+  border: 1px solid var(--text-clr);
+  border-radius: 8px;
+  color: var(--bg-clr);
+}
+
+#card-btn:hover {
+  background-color: transparent;
+  color: var(--text-clr);
+  font-weight: 600;
+}
+
+#page4 {
+  height: 80vh;
+  width: 100%;
+  padding: 20px 80px;
+}
+#page4 .com {
+  height: 60%;
+  width: 100%;
+  background-color: var(--light-white-clr);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px 80px;
+  gap: 10px;
+  margin-top: 5vw;
+}
+
+#page4 .services-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 3vw;
+}
+
+#page4 .services-header h2 {
+  font-size: 2.5vw;
+  background-color: #a3e84e;
+  padding: 0px;
+}
+
+#page4 .services-header p {
+  width: 60%;
+}
+
+.com .last-card {
+  color: var(--text-clr);
+  width: 30%;
+  padding: 0 50px;
+}
+
+.com .last-card.cen {
+  border-left: 1px solid var(--text-clr);
+  border-right: 1px solid var(--text-clr);
+}
+
+#card-one {
+  background-image: url(https://cdn.prod.website-files.com/65c3aad23a5a1cc719c8993d/65c49bc1993fe39bcc9c5222_Illustration.png);
+  background-size: 13.125rem 10.625rem;
+  background-position: calc(100% - 10%);
+  background-repeat: no-repeat;
+}
+
+#card-two {
+  background-image: url(https://cdn.prod.website-files.com/65c3aad23a5a1cc719c8993d/65c49bc150eebb12379dff44_Illustration-4.png);
+  background-size: 13.125rem 10.625rem;
+  background-position: calc(100% - 10%);
+  background-repeat: no-repeat;
+}
+
+#card-three {
+  background-image: url(https://cdn.prod.website-files.com/65c3aad23a5a1cc719c8993d/65c49bc1e8fbac9c30365f12_Illustration-2.png);
+  background-size: 13.125rem 10.625rem;
+  background-position: calc(100% - 10%);
+  background-repeat: no-repeat;
+}
+
+#card-four {
+  background-image: url(https://cdn.prod.website-files.com/65c3aad23a5a1cc719c8993d/65c49bc1c18d1e54bd943699_tokyo-sending-messages-from-one-place-to-another%201.png);
+  background-size: 13.125rem 10.625rem;
+  background-position: calc(100% - 10%);
+  background-repeat: no-repeat;
+}
